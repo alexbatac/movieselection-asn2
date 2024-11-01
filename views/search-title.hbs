@@ -1,0 +1,8 @@
+
+<h2>Search for the title of the movie</h2><br>
+<form action="/search-title" method="POST">
+    {{> inputField name="movie_title" placeholder="Enter Movie Title"}} <!-- Using the input field partial -->
+    {{> searchButton}} <!-- Using the search button partial -->
+</form><br>
+
+{{{backButton '/'}}}

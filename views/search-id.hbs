@@ -1,0 +1,11 @@
+
+<h2>Search movie using Movie ID</h2>
+<!-- views/search-id.hbs -->
+<form action="/search-id" method="POST">
+    {{> inputField name="movie_id" placeholder="Enter Movie ID"}} <!-- Using the input field partial -->
+    {{> searchButton}} <!-- Using the search button partial -->
+</form>
+{{> errorMessage message=error}} <!-- Using the error message partial -->
+
+<br>
+{{{backButton '/'}}}

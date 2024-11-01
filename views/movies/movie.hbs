@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    
+    <!-- Movie Details Container -->
+    <div class="container">
+        <h2>{{movie.Title}}</h2>
+        <p><strong>Movie ID:</strong> {{movie.Movie_ID}}</p>
+        <p><strong>Title:</strong> {{movie.Title}}</p>
+        <p><strong>Year:</strong> {{movie.Year}}</p>
+        <p><strong>Actors:</strong> {{movie.Actors}}</p>
+        <p><strong>Director:</strong> {{movie.Director}}</p>
+        <p><strong>Genre:</strong> {{movie.Genre}}</p>
+        <p><strong>Plot:</strong> {{movie.Plot}}</p><br>
+    </div>
+
+    <!-- Back Button -->
+    {{{backButton '/search-id'}}}
+   
+</body>
+</html>

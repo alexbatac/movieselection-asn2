@@ -1,0 +1,25 @@
+{
+  "name": "asn2-alex",
+  "version": "1.0.0",
+  "description": "Assignment 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbatac/WebFrameworkAsn2.git"
+  },
+  "author": "Alex Batac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexbatac/WebFrameworkAsn2/issues"
+  },
+  "homepage": "https://github.com/alexbatac/WebFrameworkAsn2#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "express-validator": "^7.2.0",
+    "hbs": "^4.2.0"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        /* Define the highlight class */
+        .highlight {
+            background-color: hsl(51, 97%, 77%); /* Yellow background for missing Metascore */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{title}}</h1>
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Actors</th>
+                <th>Director</th>
+                <th>Genre</th>
+                <th>Plot</th>
+                <th>Metascore</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each movies}}
+            <tr class="{{highlightMissingMetascore Metascore}}">
+                <td>{{Title}}</td>
+                <td>{{Year}}</td>
+                <td>{{Actors}}</td>
+                <td>{{Director}}</td>
+                <td>{{Genre}}</td>
+                <td>{{Plot}}</td>
+                <td>{{Metascore}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    {{{backButton '/'}}} 
+</body>
+</html>

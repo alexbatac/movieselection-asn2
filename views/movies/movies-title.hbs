@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+   <h1>{{title}}</h1>
+    <div class="content">
+        {{#each movie}}
+            <div class="container">
+                <h2>{{Title}}</h2>
+                <p><strong>Year:</strong> {{Year}}</p>
+                <p><strong>Actors:</strong> {{Actors}}</p>
+                <p><strong>Director:</strong> {{Director}}</p>
+                <p><strong>Genre:</strong> {{Genre}}</p>
+                <p><strong>Plot:</strong> {{Plot}}</p>
+            </div>
+        {{else}}
+            <p>No movies found.</p>
+        {{/each}}
+    </div>
+
+    {{{backButton '/search-title'}}}
+
+</body>
+</html>
